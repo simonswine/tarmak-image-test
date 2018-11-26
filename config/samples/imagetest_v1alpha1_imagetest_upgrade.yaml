@@ -1,0 +1,14 @@
+apiVersion: imagetest.tarmak.io/v1alpha1
+kind: ImageTest
+metadata:
+  name: test-upgrade
+spec:
+  tarmakVersion: "release-0.5"
+  image:
+    name: "ami-456"
+    location: "eu-west-1"
+  source:
+    tarmakVersion: "release-0.4"
+    image:
+      name: "ami-123"
+      location: "eu-west-1"

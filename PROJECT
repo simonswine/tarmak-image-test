@@ -1,0 +1,3 @@
+version: "1"
+domain: tarmak.io
+repo: github.com/jetstack/tarmak-image-test

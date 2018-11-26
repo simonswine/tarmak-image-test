@@ -1,0 +1,9 @@
+apiVersion: imagetest.tarmak.io/v1alpha1
+kind: ImageTest
+metadata:
+  name: test-deploy
+spec:
+  tarmakVersion: "release-0.5"
+  image:
+    name: "ami-123"
+    location: "eu-west-1"

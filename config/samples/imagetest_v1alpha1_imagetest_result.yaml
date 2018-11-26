@@ -1,0 +1,19 @@
+apiVersion: imagetest.tarmak.io/v1alpha1
+kind: ImageTest
+metadata:
+  name: test-deploy
+spec:
+  tarmakVersion: "release-0.5"
+  image:
+    name: "ami-123"
+    location: "eu-west-1"
+status:
+  state: failed
+  testConditions:
+    - type: PrometheusAlerts
+      status: "True"
+      reason: "2 alerts failing: (xyz)"
+    - type: OverlayNetworkBroken
+      status: "False"
+    - type: TerraformError
+      status: "False"
